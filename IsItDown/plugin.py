@@ -33,9 +33,9 @@ import supybot.callbacks as callbacks
 
 import re
 from bs4 import BeautifulSoup
-from urllib.request import build_opener
-from urllib.error import HTTPError
-from urllib.parse import quote
+from urllib2 import build_opener
+from urllib2 import HTTPError
+from urllib2 import quote
 
 class IsItDown(callbacks.Privmsg):
     def isitdown(self, irc, msg, args, url):
